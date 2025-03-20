@@ -1,0 +1,66 @@
+---
+import logo from '../assets/logo.svg';
+import sloganLogo from '../assets/slogan.svg';
+---
+
+<div class="hero">
+	<div class="hero__logo-block">
+		<div class="hero__logo">
+			<img src={logo.src} alt="Wall logo">
+		</div>	
+	</div>
+	<div class="hero__slogan-block">
+		<div class="hero__slogan">
+			<img src={sloganLogo.src} alt="Wall slogan logo">
+		</div>
+	</div>
+</div>
+
+
+<style lang="scss">
+	.hero {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		height: calc(100vh - 56px);
+
+		&__logo-block {
+			background-color: #fff;
+			height: 43%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			// margin-top: -25px;
+		};
+
+		&__slogan-block {
+			background-color: #DF2521;
+			height: 57%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			// margin-top: -40px;
+		}
+
+	}
+
+	@media screen and (min-width: 768px) {
+		.hero {
+			flex-direction: row;
+
+			&__logo-block {
+				width: 43%;
+				height: 100%;
+			};
+
+			&__slogan-block {
+				width: 57%;
+				height: 100%;
+				justify-content: left;
+				padding-left: 73px;
+			}
+		}
+
+
+	}
+</style>

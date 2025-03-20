@@ -12,11 +12,83 @@
 	</body>
 </html>
 
-<style>
+
+<style is:global>
+	/* global styling */
+
+	@font-face {
+		font-family: 'Roboto';
+		src: url('../assets/Fonts/Roboto-Regular.woff2') format('woff2'),
+			url('../assets/Fonts/Roboto-Regular.woff') format('woff');
+		font-weight: 400;
+		font-style: normal;
+		font-display: swap;
+  	}
+
+	@font-face {
+		font-family: 'Roboto';
+		src: url('../assets/Fonts/Roboto-Medium.woff2') format('woff2'),
+			 url('../assets/Fonts/Roboto-Medium.woff') format('woff');
+		font-weight: 500;
+		font-style: normal;
+		font-display: swap;
+  	}
+
+	@font-face {
+		font-family: 'Roboto';
+		src: url('../assets/Fonts/Roboto-Bold.woff2') format('woff2'),
+		url('../assets/Fonts/Roboto-Bold.woff') format('woff');
+		font-weight: 700;
+		font-style: bold;
+		font-display: swap;
+  	}
+
+	  @font-face {
+		font-family: 'Roboto';
+		src: url('../assets/Fonts/Roboto-Light.woff2') format('woff2'),
+		url('../assets/Fonts/Roboto-Light.woff') format('woff');
+		font-weight: 300;
+		font-style: normal;
+		font-display: swap;
+  	}
+
+	*,
+	*::before,
+	*::after {
+	box-sizing: border-box;
+	}
+	
+	/* reset */
+	h1,h2,h3,h4,h5,h6 {
+		margin: 0;
+	}
+	p {
+		margin: 0;
+		padding: 0;
+	}
+	a {
+		text-decoration: none;
+		transition: all 0.1s ease-in;
+		outline: none;
+	}
+	ul, li {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	html {
+  		scroll-behavior: smooth;
+	}
 	html,
 	body {
+		padding: 0;
 		margin: 0;
-		width: 100%;
-		height: 100%;
+		font-family: 'Roboto', 'Helvetica', sans-serif;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 24px; 
 	}
+
+
 </style>
